@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/edutech", {
+    await mongoose.connect("mongodb://localhost:27017", {
       dbName: "Dashboard"
     });
     console.log("MongoDB connected");
